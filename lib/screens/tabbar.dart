@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_stories/screens/email_sign.dart';
 import 'package:kitchen_stories/screens/signup.dart';
+import 'package:kitchen_stories/tabbar_pages.dart/tabpage_1.dart';
+import 'package:kitchen_stories/tabbar_pages.dart/tabpage_2.dart';
+import 'package:kitchen_stories/tabbar_pages.dart/tabpage_3.dart';
 
 class TabBarr extends StatelessWidget {
   const TabBarr({super.key});
@@ -11,16 +14,20 @@ class TabBarr extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          elevation: 2,
+          elevation: 0,
           backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
-          bottom: const PreferredSize(
-            preferredSize: Size.fromHeight(2),
-            child: Align(
+        ),
+        body: Column(
+          children: const [
+            Align(
               alignment: Alignment.centerLeft,
               child: TabBar(
                 isScrollable: true,
                 labelStyle: TextStyle(fontWeight: FontWeight.w500),
                 indicatorColor: Colors.orange,
+                labelColor: Colors.orange,
+                unselectedLabelColor: Colors.grey,
+
                 tabs: [
                   Tab(
                     child: Text(
@@ -46,14 +53,29 @@ class TabBarr extends StatelessWidget {
                 ],
               ),
             ),
-          ),
+            Expanded(
+              child: TabBarView(
+                children: [
+                  TabPage1(),
+                  TabPage2(),
+                  TabPage3()
+                  ,
+                ],
+              ),
+            ),
+          ],
         ),
-        body: const TabBarView(children: [
-          SignUp(),
-          EmailPage(),
-          EmailPage(),
-        ]),
       ),
     );
+
+    //     body: const Expanded(
+    //       child: TabBarView(children: [
+    //         SignUp(),
+    //         EmailPage(),
+    //         EmailPage(),
+    //       ]),
+    //     ),
+    //   ),
+    // );
   }
 }
