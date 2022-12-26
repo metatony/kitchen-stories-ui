@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_stories/screens/email_sign.dart';
+import 'package:kitchen_stories/screens/home.dart';
 import 'package:kitchen_stories/screens/profile_account.dart';
 import 'package:kitchen_stories/screens/signup.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
@@ -15,7 +16,7 @@ class _BottomBarState extends State<BottomBar> {
   int selectedIndex = 0;
 
   List<Widget> widgetOptions = [
-    const SignUp(),
+    const Home(),
     const EmailPage(),
     const SignUp(),
     const SignUp(),
