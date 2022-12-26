@@ -8,31 +8,44 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-            child: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(
-              child: Container(
-                alignment: Alignment.centerLeft,
-                color: Colors.white,
-                height: 60,
-                width: double.infinity,
-                child: const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Text('Our Latest Recipes',
-                  style: TextStyle(fontSize: 20,
-                  letterSpacing: 1,
-                  fontWeight: FontWeight.w500),),
+      body: SafeArea(
+          child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Container(
+              alignment: Alignment.centerLeft,
+              color: Colors.white,
+              height: 60,
+              width: double.infinity,
+              child: const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  'Our Latest Recipes',
+                  style: TextStyle(
+                      fontSize: 20,
+                      letterSpacing: 1,
+                      fontWeight: FontWeight.w500),
                 ),
               ),
-              
             ),
-            const SliverToBoxAdapter(
-              child: RecipeCatalogue(),
-            )
-          ],
-        )),
-      );
-    
+          ),
+          const SliverToBoxAdapter(
+            child: RecipeCatalogue(),
+          ),
+          const SliverPadding(
+            padding: EdgeInsets.all(8.0),
+            sliver: SliverToBoxAdapter(
+              child: Text(
+                'More From',
+                style: TextStyle(
+                    fontSize: 20,
+                    letterSpacing: 1,
+                    fontWeight: FontWeight.w500),
+              ),
+            ),
+          )
+        ],
+      )),
+    );
   }
 }

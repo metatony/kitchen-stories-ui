@@ -80,10 +80,14 @@ class FirstCatalogue extends StatelessWidget {
             ),
           ],
         ),
-        Material(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-          elevation: 10,
+        Card(
+          elevation: 1,
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(15),
+              bottomRight: Radius.circular(15),
+            ),
+          ),
           child: Container(
             height: 110,
             width: 280,
