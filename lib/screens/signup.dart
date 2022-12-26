@@ -28,8 +28,16 @@ class SignUp extends StatelessWidget {
       ),
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 25.0),
+              child: Image(
+                height: 100,
+                width: 150,
+                image: NetworkImage(
+                    'https://img.freepik.com/free-vector/isolated-rose-flower-line-art-with-leaf-clipart_41066-2958.jpg?size=626&ext=jpg&uid=R88220302&ga=GA1.2.198902070.1671404130'),
+              ),
+            ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
@@ -93,14 +101,3 @@ class SignUp extends StatelessWidget {
     );
   }
 }
-
-//   RichText(
-          //     text: const TextSpan(
-          //             style: TextStyle(fontSize: 15,
-          //             color: Colors.black),
-          //             children: [
-          //               TextSpan(text: 'privacy policy',
-          //               style: TextStyle(decoration: TextDecoration.underline))
-          //             ]
-          //           ),
-          //           )

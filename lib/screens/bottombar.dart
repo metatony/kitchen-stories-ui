@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:kitchen_stories/screens/email_sign.dart';
 import 'package:kitchen_stories/screens/profile_account.dart';
 import 'package:kitchen_stories/screens/signup.dart';
-import 'package:kitchen_stories/screens/tabbar.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
 class BottomBar extends StatefulWidget {
@@ -18,7 +17,7 @@ class _BottomBarState extends State<BottomBar> {
   List<Widget> widgetOptions = [
     const SignUp(),
     const EmailPage(),
-    const TabBarr(),
+    const SignUp(),
     const SignUp(),
     const Profile(),
   ];
