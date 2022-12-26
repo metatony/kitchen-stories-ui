@@ -14,7 +14,7 @@ class TabPage1 extends StatelessWidget {
             Center(
               child: Text(
                 'You haven\'t created any cookbooks yet',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
               ),
             ),
           ],

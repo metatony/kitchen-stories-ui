@@ -14,7 +14,7 @@ class TabPage3 extends StatelessWidget {
             Center(
               child: Text(
                 'You haven\'t gotten any likes yet',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
               ),
             ),
           ],
