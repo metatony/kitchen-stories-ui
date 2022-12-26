@@ -1,86 +1,129 @@
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:gap/gap.dart';
 
 class FirstCatalogue extends StatelessWidget {
-  const FirstCatalogue({super.key});
+  const FirstCatalogue(
+      {super.key,
+      required this.title,
+      required this.accountName,
+      required this.avatar,
+      required this.images,
+      required this.min,
+      required this.likes});
+
+  final String title;
+  final String accountName;
+  final String avatar;
+  final String images;
+  final String min;
+  final String likes;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Column(
-            children: [
-              Container(
-                height: 330,
-                width: 280,
-                //color: Colors.green,
-                decoration: const BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(15),
-                    topRight: Radius.circular(15),
-                  ),
-                  image: DecorationImage(
-                    image: NetworkImage(
-                        'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60'),
-                    fit: BoxFit.cover,
-                  ),
+    return Column(
+      children: [
+        Stack(
+          children: [
+            Container(
+              height: 330,
+              width: 280,
+              decoration: BoxDecoration(
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(15),
+                  topRight: Radius.circular(15),
+                ),
+                image: DecorationImage(
+                  image: NetworkImage(images),
+                  fit: BoxFit.cover,
                 ),
               ),
-              Material(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)),
-                elevation: 1,
-                child: Container(
-                  height: 110,
-                  width: 270,
-                  //color: Colors.green,
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(15),
-                      bottomRight: Radius.circular(15),
-                    ),
+            ),
+            Positioned(
+              top: 15,
+              left: 15,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 252, 245, 176),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                height: 27,
+                width: 60,
+                child: Center(
+                    child: Text(
+                  min,
+                  style: const TextStyle(fontSize: 12),
+                )),
+              ),
+            ),
+            Positioned(
+              bottom: 15,
+              right: 15,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                height: 32,
+                width: 80,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(FeatherIcons.heart),
+                    const Gap(8),
+                    Text(likes),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+        Material(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          elevation: 10,
+          child: Container(
+            height: 110,
+            width: 280,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(15),
+                bottomRight: Radius.circular(15),
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: const TextStyle(fontSize: 16, letterSpacing: 1),
                   ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                  Expanded(
+                    child: Row(
                       children: [
-                        const Text(
-                          'Slice-and-bake Christmas cookies',
-                          style: TextStyle(fontSize: 16, letterSpacing: 1),
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundImage: NetworkImage(avatar),
                         ),
-                        //Gap(10),
-                        Expanded(
-                          child: Row(
-                            children: const [
-                              CircleAvatar(
-                                radius: 20,
-                                backgroundImage: NetworkImage(
-                                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmiIWMTz-YiQvlnBfcQLrWN4VBgKlnoWsJHQ&usqp=CAU'),
-                              ),
-                              Gap(10),
-                              Text(
-                                'Andrew Scholzel',
-                                style: TextStyle(color: Colors.orange),
-                              ),
-                            ],
-                          ),
+                        const Gap(10),
+                        Text(
+                          accountName,
+                          style: const TextStyle(color: Colors.orange),
                         ),
                       ],
                     ),
                   ),
-                ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
-      ),
+      ],
     );
   }
 }

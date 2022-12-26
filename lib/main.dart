@@ -17,7 +17,7 @@ class Kitchen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FirstCatalogue(),
+      home: Home(),
     );
   }
 }
