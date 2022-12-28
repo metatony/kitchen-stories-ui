@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:kitchen_stories/authors%20list/authors_widget.dart';
-import 'package:kitchen_stories/recipes%20list/authors_refractor.dart';
+import 'package:kitchen_stories/get_started/get_started.dart';
+import 'package:kitchen_stories/authors%20list/authors_refractor.dart';
+import 'package:kitchen_stories/recipes%20list%202/catalogue_2.dart';
+import 'package:kitchen_stories/recipes%20list%202/quick_wins.dart';
 import 'package:kitchen_stories/recipes%20list/catalogue_1.dart';
 import 'package:kitchen_stories/recipes%20list/recipe_catalogue.dart';
 import 'package:kitchen_stories/widgets/cookbook.dart';
@@ -113,7 +116,16 @@ class Home extends StatelessWidget {
               sliver: SliverToBoxAdapter(
                 child: CookBook(),
               ),
-            )
+            ),
+            const SliverPadding(
+              padding: const EdgeInsets.all(13.0),
+              sliver: SliverToBoxAdapter(
+                child: GetStarted(),
+              ),
+            ),
+            const SliverToBoxAdapter(
+              child: QuickWins(),
+            ),
           ],
         ),
       ),
