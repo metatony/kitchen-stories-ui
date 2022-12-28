@@ -33,7 +33,7 @@ class CookBook extends StatelessWidget {
             ),
           ),
           child: Container(
-            height: 70,
+            height: 100,
             width: double.infinity,
             decoration: const BoxDecoration(
               color: Colors.white,

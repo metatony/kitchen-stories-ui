@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kitchen_stories/screens/bottombar.dart';
 import 'package:kitchen_stories/screens/home.dart';
 
 class Splash extends StatefulWidget {
@@ -11,11 +12,11 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (BuildContext context) {
-          return const Home();
+          return const BottomBar();
         }),
       );
     });
@@ -31,14 +32,15 @@ class _SplashState extends State<Splash> {
             children: const [
               Text(
                 'kitchen stories',
-                style: TextStyle(fontSize: 20, letterSpacing: 3),
+                style: TextStyle(fontSize: 25, letterSpacing: 3,
+                fontWeight: FontWeight.bold),
               ),
               SizedBox(
                 height: 5,
               ),
               Text(
                 'ANYONE CAN COOK',
-                style: TextStyle(fontSize: 9, letterSpacing: 2),
+                style: TextStyle(fontSize: 10, letterSpacing: 2),
               ),
             ],
           ),

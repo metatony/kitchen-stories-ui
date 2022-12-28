@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:kitchen_stories/screens/create_page.dart';
 import 'package:kitchen_stories/screens/email_sign.dart';
 import 'package:kitchen_stories/screens/home.dart';
 import 'package:kitchen_stories/screens/profile_account.dart';
+import 'package:kitchen_stories/screens/search_page.dart';
+import 'package:kitchen_stories/screens/shopping_page.dart';
 import 'package:kitchen_stories/screens/signup.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
@@ -17,10 +20,10 @@ class _BottomBarState extends State<BottomBar> {
 
   List<Widget> widgetOptions = [
     const Home(),
-    const EmailPage(),
+    const SearchPage(),
+    const CreatePage(),
+    const ShoppingPage(),
     const SignUp(),
-    const SignUp(),
-    const Profile(),
   ];
 
   void onItemTapped(int index) {

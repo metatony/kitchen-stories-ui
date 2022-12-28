@@ -6,8 +6,11 @@ import 'package:kitchen_stories/screens/bottombar.dart';
 import 'package:kitchen_stories/screens/home.dart';
 import 'package:kitchen_stories/screens/profile_account.dart';
 import 'package:kitchen_stories/screens/signup.dart';
+import 'package:kitchen_stories/screens/splash.dart';
 import 'package:kitchen_stories/tabbar_pages.dart/tabpage_1.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
 
 void main() {
   runApp(const Kitchen());
@@ -18,9 +21,11 @@ class Kitchen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      theme: ThemeData( fontFamily: GoogleFonts.poppins().fontFamily),
+      
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Splash(),
     );
   }
 }

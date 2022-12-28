@@ -17,7 +17,7 @@ class GetStarted extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           color: const Color.fromARGB(255, 250, 244, 201),
         ),
-        height: 235,
+        height: 260,
         width: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
