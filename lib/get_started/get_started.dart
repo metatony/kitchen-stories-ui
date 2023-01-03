@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:gap/gap.dart';
+import 'package:kitchen_stories/constants.dart';
 
 class GetStarted extends StatelessWidget {
   const GetStarted({super.key});
@@ -47,7 +48,7 @@ class GetStarted extends StatelessWidget {
             Center(
               child: MaterialButton(
                 elevation: 0,
-                color: const Color.fromARGB(255, 24, 126, 116),
+                color: greenButtonColor,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30)),
                 height: 46,

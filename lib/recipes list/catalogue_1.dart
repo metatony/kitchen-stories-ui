@@ -1,8 +1,8 @@
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:gap/gap.dart';
+import 'package:kitchen_stories/constants.dart';
 
 class FirstCatalogue extends StatelessWidget {
   const FirstCatalogue(
@@ -105,7 +105,7 @@ class FirstCatalogue extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: const TextStyle(fontSize: 16, letterSpacing: 1),
+                    style: catalogueTextStyle,
                   ),
                   Expanded(
                     child: Row(
@@ -117,7 +117,7 @@ class FirstCatalogue extends StatelessWidget {
                         const Gap(10),
                         Text(
                           accountName,
-                          style: const TextStyle(color: Colors.orange),
+                          style: const TextStyle(color: orangeColor),
                         ),
                       ],
                     ),
