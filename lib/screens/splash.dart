@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_stories/screens/bottombar.dart';
-import 'package:kitchen_stories/screens/home.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});

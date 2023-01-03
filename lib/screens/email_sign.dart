@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:kitchen_stories/constants.dart';
 import 'package:kitchen_stories/screens/profile_account.dart';
 
 class EmailPage extends StatelessWidget {
@@ -89,7 +90,7 @@ class EmailPage extends StatelessWidget {
                 elevation: 2,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25)),
-                color: const Color.fromARGB(255, 24, 126, 116),
+                color: greenButtonColor,
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (BuildContext context) {
@@ -143,9 +144,10 @@ class EmailPage extends StatelessWidget {
               const Text(
                 'LOG IN HERE',
                 style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 14,
+                    letterSpacing: 1,
                     fontWeight: FontWeight.bold,
-                    color: Colors.orange),
+                    color: orangeColor),
               ),
             ],
           ),

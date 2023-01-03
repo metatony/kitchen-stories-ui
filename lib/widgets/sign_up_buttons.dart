@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:kitchen_stories/constants.dart';
 import 'package:kitchen_stories/screens/email_sign.dart';
 
 class SignUpButtons extends StatelessWidget {
@@ -37,7 +38,7 @@ class SignUpButtons extends StatelessWidget {
         MaterialButton(
           elevation: 1,
           height: 50,
-          color: const Color.fromARGB(255, 24, 110, 180),
+          color: blueButtonColor,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           child: Row(
@@ -62,7 +63,7 @@ class SignUpButtons extends StatelessWidget {
         MaterialButton(
           elevation: 1,
           height: 50,
-          color: const Color.fromARGB(255, 24, 126, 116),
+          color: greenButtonColor,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           child: Row(

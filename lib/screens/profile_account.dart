@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
-import 'package:kitchen_stories/screens/email_sign.dart';
-import 'package:kitchen_stories/screens/signup.dart';
-import 'package:kitchen_stories/tabbar_pages.dart/tab_bar_page.dart';
-import 'package:kitchen_stories/tabbar_pages.dart/tabpage_1.dart';
-import 'package:kitchen_stories/tabbar_pages.dart/tabpage_2.dart';
-import 'package:kitchen_stories/tabbar_pages.dart/tabpage_3.dart';
 import 'package:kitchen_stories/widgets/profile_icon_container.dart';
+import '../tabbar_pages.dart/tab_bar_page.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});

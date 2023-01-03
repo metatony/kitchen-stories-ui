@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:kitchen_stories/constants.dart';
 import 'package:kitchen_stories/widgets/sign_up_buttons.dart';
+
+
+
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -97,7 +101,8 @@ class SignUp extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
-                    color: Colors.orange),
+                    color: orangeColor,
+              ),
               ),
             ],
           ),
