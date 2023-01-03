@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_stories/constants.dart';
+import 'package:kitchen_stories/Constatnts/constants.dart';
 import 'package:kitchen_stories/tabbar_pages.dart/tabpage_1.dart';
 import 'package:kitchen_stories/tabbar_pages.dart/tabpage_2.dart';
 import 'package:kitchen_stories/tabbar_pages.dart/tabpage_3.dart';

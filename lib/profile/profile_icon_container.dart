@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_stories/constants.dart';
+import 'package:kitchen_stories/Constatnts/constants.dart';
 
 class ProfileIcon extends StatelessWidget {
   const ProfileIcon({

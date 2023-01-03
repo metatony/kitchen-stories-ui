@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:gap/gap.dart';
-import 'package:kitchen_stories/constants.dart';
+import 'package:kitchen_stories/Constatnts/constants.dart';
 
 class GetStarted extends StatelessWidget {
   const GetStarted({super.key});

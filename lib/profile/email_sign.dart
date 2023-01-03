@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
-import 'package:kitchen_stories/constants.dart';
-import 'package:kitchen_stories/widgets/sign_up_buttons.dart';
+import 'package:kitchen_stories/Constatnts/constants.dart';
+import 'package:kitchen_stories/profile/profile_account.dart';
 
-
-
-
-class SignUp extends StatelessWidget {
-  const SignUp({super.key});
+class EmailPage extends StatelessWidget {
+  const EmailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +13,17 @@ class SignUp extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.5,
+        leading: IconButton(
+          icon: const Icon(
+            FeatherIcons.arrowLeft,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         title: const Text(
-          'Sign up',
+          'Sign up with email',
           style: TextStyle(color: Colors.black, fontSize: 20),
         ),
         actions: [
@@ -30,19 +36,13 @@ class SignUp extends StatelessWidget {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: SafeArea(
+      body: SafeArea(
+        child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Padding(
-                padding: EdgeInsets.symmetric(vertical: 25.0),
-                child: Image(
-                  height: 100,
-                  width: 150,
-                  image: NetworkImage(
-                      'https://img.freepik.com/free-vector/isolated-rose-flower-line-art-with-leaf-clipart_41066-2958.jpg?size=626&ext=jpg&uid=R88220302&ga=GA1.2.198902070.1671404130'),
-                ),
+              const SizedBox(
+                height: 40,
               ),
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.0),
@@ -55,9 +55,54 @@ class SignUp extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 45),
-                  child: const SignUpButtons()),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                child: Container(
+                  child: Column(
+                    children: const [
+                      TextField(
+                        decoration: InputDecoration(
+                          labelText: 'Email',
+                        ),
+                      ),
+                      TextField(
+                        decoration: InputDecoration(
+                          labelText: 'Username',
+                        ),
+                      ),
+                      TextField(
+                        obscureText: true,
+                        obscuringCharacter: '*',
+                        decoration: InputDecoration(
+                          labelText: 'Password',
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              MaterialButton(
+                height: 45,
+                minWidth: 250,
+                elevation: 2,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(25)),
+                color: greenButtonColor,
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (BuildContext context) {
+                    return const Profile();
+                  }));
+                },
+                child: const Text(
+                  'Join Kitchen Stories',
+                  style: TextStyle(
+                      fontSize: 16, letterSpacing: 1, color: Colors.white),
+                ),
+              ),
               const SizedBox(
                 height: 30,
               ),
@@ -99,10 +144,10 @@ class SignUp extends StatelessWidget {
               const Text(
                 'LOG IN HERE',
                 style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 14,
+                    letterSpacing: 1,
                     fontWeight: FontWeight.bold,
-                    color: orangeColor,
-              ),
+                    color: orangeColor),
               ),
             ],
           ),

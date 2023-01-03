@@ -1,4 +1,4 @@
-import 'package:kitchen_stories/recipes%20list%202/catalogue_2.dart';
+import 'package:kitchen_stories/Carousel%202/catalogue_2.dart';
 
 List<SecondCatalogue> secondList = [
   const SecondCatalogue(

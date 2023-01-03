@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
-import 'package:kitchen_stories/widgets/profile_icon_container.dart';
+import 'package:kitchen_stories/profile/profile_icon_container.dart';
 import '../tabbar_pages.dart/tab_bar_page.dart';
 
 class Profile extends StatelessWidget {

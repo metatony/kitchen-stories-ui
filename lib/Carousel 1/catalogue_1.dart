@@ -1,10 +1,11 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:gap/gap.dart';
-import 'package:kitchen_stories/constants.dart';
+import 'package:kitchen_stories/Constatnts/constants.dart';
 
-class SecondCatalogue extends StatelessWidget {
-  const SecondCatalogue(
+class FirstCatalogue extends StatelessWidget {
+  const FirstCatalogue(
       {super.key,
       required this.title,
       required this.accountName,

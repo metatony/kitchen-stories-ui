@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_stories/recipes%20list%202/catalogue_2.dart';
-import 'package:kitchen_stories/recipes%20list%202/second_catalogue_list.dart';
+import 'package:kitchen_stories/Carousel%201/catalogue_1.dart';
+import 'package:kitchen_stories/Carousel%201/first_catalogue_list.dart';
 
-class QuickWins extends StatelessWidget {
-  const QuickWins({super.key});
+class RecipeCatalogue extends StatelessWidget {
+  const RecipeCatalogue({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +12,10 @@ class QuickWins extends StatelessWidget {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
-            children: secondList.map((data) {
+            children: firstList.map((data) {
           return Padding(
             padding: const EdgeInsets.only(right: 12),
-            child: SecondCatalogue(
+            child: FirstCatalogue(
                 title: data.title,
                 accountName: data.accountName,
                 avatar: data.avatar,
