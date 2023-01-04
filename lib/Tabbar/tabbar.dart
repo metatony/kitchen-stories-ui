@@ -18,8 +18,8 @@ class TabBarPage extends StatelessWidget {
           child: TabBar(
             isScrollable: true,
             labelStyle: TextStyle(fontWeight: FontWeight.w500),
-            indicatorColor: orangeColor,
-            labelColor: orangeColor,
+            indicatorColor: kOrangeColor,
+            labelColor: kOrangeColor,
             unselectedLabelColor: Colors.grey,
             tabs: [
               Tab(

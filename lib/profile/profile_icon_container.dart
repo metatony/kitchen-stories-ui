@@ -52,7 +52,7 @@ class ProfileIcon extends StatelessWidget {
               onPressed: () {},
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
-                side: const BorderSide(color: greenButtonColor, width: 2),
+                side: const BorderSide(color: kGreenButtonColor, width: 2),
               ),
               color: Colors.white,
               child: const Text('Edit Profile'),

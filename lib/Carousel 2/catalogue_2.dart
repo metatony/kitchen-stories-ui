@@ -104,7 +104,7 @@ class SecondCatalogue extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: catalogueTextStyle,
+                    style: kCatalogueTextStyle,
                   ),
                   Expanded(
                     child: Row(
@@ -116,7 +116,7 @@ class SecondCatalogue extends StatelessWidget {
                         const Gap(10),
                         Text(
                           accountName,
-                          style: const TextStyle(color: orangeColor),
+                          style: const TextStyle(color: kOrangeColor),
                         ),
                       ],
                     ),

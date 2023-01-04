@@ -48,7 +48,7 @@ class GetStarted extends StatelessWidget {
             Center(
               child: MaterialButton(
                 elevation: 0,
-                color: greenButtonColor,
+                color: kGreenButtonColor,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30)),
                 height: 46,

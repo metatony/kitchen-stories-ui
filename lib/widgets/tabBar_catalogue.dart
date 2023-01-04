@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:gap/gap.dart';
-import 'package:kitchen_stories/Constatnts/constants.dart';
 
-class FirstCatalogue extends StatelessWidget {
-  const FirstCatalogue(
-      {super.key,
-      required this.title,
-      required this.accountName,
-      required this.avatar,
-      required this.images,
-      required this.min,
-      required this.likes});
+import '../Constatnts/constants.dart';
+
+class TabBarCatalogue extends StatelessWidget {
+  const TabBarCatalogue({
+    super.key,
+    required this.title,
+    required this.accountName,
+    required this.avatar,
+    required this.images,
+    required this.min,
+  });
 
   final String title;
   final String accountName;
   final String avatar;
   final String images;
   final String min;
-  final String likes;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +27,8 @@ class FirstCatalogue extends StatelessWidget {
         Stack(
           children: [
             Container(
-              height: 330,
-              width: 280,
+              height: 200,
+              width: 180,
               decoration: BoxDecoration(
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(15),
@@ -66,20 +66,21 @@ class FirstCatalogue extends StatelessWidget {
                   borderRadius: BorderRadius.circular(15),
                 ),
                 height: 32,
-                width: 80,
+                width: 48,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Icon(FeatherIcons.heart),
-                    const Gap(8),
-                    Text(likes),
+                  children: const [
+                    Icon(
+                      FeatherIcons.heart,
+                      color: kOrangeColor,
+                    ),
                   ],
                 ),
               ),
             ),
           ],
         ),
-        Card(
+        Material(
           elevation: 1,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
@@ -88,8 +89,8 @@ class FirstCatalogue extends StatelessWidget {
             ),
           ),
           child: Container(
-            height: 110,
-            width: 280,
+            height: 120,
+            width: 180,
             decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(
@@ -100,26 +101,25 @@ class FirstCatalogue extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(12.0),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     title,
-                    style: kCatalogueTextStyle,
+                    style: kSlimCatalogueTextStyle,
                   ),
-                  Expanded(
-                    child: Row(
-                      children: [
-                        CircleAvatar(
-                          radius: 20,
-                          backgroundImage: NetworkImage(avatar),
-                        ),
-                        const Gap(10),
-                        Text(
-                          accountName,
-                          style: const TextStyle(color: kOrangeColor),
-                        ),
-                      ],
-                    ),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 20,
+                        backgroundImage: NetworkImage(avatar),
+                      ),
+                      const Gap(10),
+                      Text(
+                        accountName,
+                        style: const TextStyle(color: kOrangeColor),
+                      ),
+                    ],
                   ),
                 ],
               ),

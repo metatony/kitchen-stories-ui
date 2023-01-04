@@ -90,7 +90,7 @@ class EmailPage extends StatelessWidget {
                 elevation: 2,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(25)),
-                color: greenButtonColor,
+                color: kGreenButtonColor,
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (BuildContext context) {
@@ -147,7 +147,7 @@ class EmailPage extends StatelessWidget {
                     fontSize: 14,
                     letterSpacing: 1,
                     fontWeight: FontWeight.bold,
-                    color: orangeColor),
+                    color: kOrangeColor),
               ),
             ],
           ),

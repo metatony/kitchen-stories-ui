@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:kitchen_stories/Constatnts/constants.dart';
 
 class TabPage1 extends StatelessWidget {
   const TabPage1({super.key});
@@ -19,6 +21,11 @@ class TabPage1 extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: kOrangeColor,
+        onPressed: () {},
+        child: Icon(FeatherIcons.plus),
       ),
     );
   }

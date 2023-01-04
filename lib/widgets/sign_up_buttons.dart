@@ -38,7 +38,7 @@ class SignUpButtons extends StatelessWidget {
         MaterialButton(
           elevation: 1,
           height: 50,
-          color: blueButtonColor,
+          color: kBlueButtonColor,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           child: Row(
@@ -63,7 +63,7 @@ class SignUpButtons extends StatelessWidget {
         MaterialButton(
           elevation: 1,
           height: 50,
-          color: greenButtonColor,
+          color: kGreenButtonColor,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           child: Row(
