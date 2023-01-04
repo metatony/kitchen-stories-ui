@@ -47,21 +47,21 @@ class _BottomBarState extends State<BottomBar> {
         items: const [
           BottomNavigationBarItem(
               icon: Padding(
-                padding: EdgeInsets.symmetric(vertical:8.0),
+                padding: EdgeInsets.symmetric(vertical: 8.0),
                 child: Icon(FeatherIcons.home),
               ),
               label: 'Home',
               backgroundColor: Colors.green),
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.symmetric(vertical:8.0),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Icon(FeatherIcons.search),
             ),
             label: 'Search',
           ),
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.symmetric(vertical:8.0),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Icon(
                 FeatherIcons.plusCircle,
               ),
@@ -70,7 +70,7 @@ class _BottomBarState extends State<BottomBar> {
           ),
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.symmetric(vertical:8.0),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Icon(
                 FeatherIcons.calendar,
               ),
@@ -79,7 +79,7 @@ class _BottomBarState extends State<BottomBar> {
           ),
           BottomNavigationBarItem(
             icon: Padding(
-              padding: EdgeInsets.symmetric(vertical:8.0),
+              padding: EdgeInsets.symmetric(vertical: 8.0),
               child: Icon(
                 FeatherIcons.user,
               ),

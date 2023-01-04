@@ -7,7 +7,7 @@ import 'package:kitchen_stories/screens/home.dart';
 import 'package:kitchen_stories/profile/profile_account.dart';
 import 'package:kitchen_stories/profile/signup.dart';
 import 'package:kitchen_stories/screens/splash.dart';
-import 'package:kitchen_stories/Tabbar/tabpage_1.dart';
+import 'package:kitchen_stories/Tabbar/Tabbar%20page%201/tabpage_1.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

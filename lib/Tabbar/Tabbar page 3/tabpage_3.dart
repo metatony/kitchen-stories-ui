@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:kitchen_stories/Carousel%201/catalogue_1.dart';
 
-import '../widgets/tabBar_catalogue.dart';
+import 'tabBar3_catalogue.dart';
 
 class TabPage3 extends StatelessWidget {
   const TabPage3({super.key});
@@ -19,7 +19,7 @@ class TabPage3 extends StatelessWidget {
             child: Row(
               children: const [
                 Expanded(
-                  child: TabBarCatalogue(
+                  child: TabBar3Catalogue(
                     title: 'Fluffy Kaiserschmarrn wi...',
                     accountName: 'Ben Donath',
                     avatar:
@@ -31,7 +31,7 @@ class TabPage3 extends StatelessWidget {
                 ),
                 //Gap(10),
                 Expanded(
-                  child: TabBarCatalogue(
+                  child: TabBar3Catalogue(
                     title: 'Green Shakshuka',
                     accountName: 'Jamie Oliver',
                     avatar:

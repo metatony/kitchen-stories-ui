@@ -2,21 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:gap/gap.dart';
 
-import '../Constatnts/constants.dart';
+import '../../Constatnts/constants.dart';
 
-class TabBarCatalogue extends StatelessWidget {
-  const TabBarCatalogue({
+class TabBar2Catalogue extends StatelessWidget {
+  const TabBar2Catalogue({
     super.key,
     required this.title,
-    required this.accountName,
-    required this.avatar,
     required this.images,
     required this.min,
   });
 
   final String title;
-  final String accountName;
-  final String avatar;
   final String images;
   final String min;
 
@@ -42,38 +38,48 @@ class TabBarCatalogue extends StatelessWidget {
             ),
             Positioned(
               top: 15,
-              left: 15,
+              left: 10,
               child: Container(
                 decoration: BoxDecoration(
                   color: const Color.fromARGB(255, 252, 245, 176),
                   borderRadius: BorderRadius.circular(15),
                 ),
-                height: 27,
-                width: 60,
+                height: 24,
+                width: 50,
                 child: Center(
                     child: Text(
                   min,
-                  style: const TextStyle(fontSize: 12),
+                  style: const TextStyle(fontSize: 11),
                 )),
               ),
             ),
             Positioned(
-              bottom: 15,
-              right: 15,
+              top: 15,
+              right: 25,
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                height: 32,
-                width: 48,
+                height: 28,
+                width: 83,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Icon(
-                      FeatherIcons.heart,
-                      color: kOrangeColor,
+                  children: [
+                    Container(
+                      width: 10,
+                      height: 10,
+                      decoration: BoxDecoration(
+                        color: Color(0xffF7D047),
+                        shape: BoxShape.circle,
+                      ),
                     ),
+                    Gap(5),
+                    Center(
+                        child: Text(
+                      'IN REVIEW',
+                      style: const TextStyle(fontSize: 11),
+                    )),
                   ],
                 ),
               ),
@@ -89,7 +95,7 @@ class TabBarCatalogue extends StatelessWidget {
             ),
           ),
           child: Container(
-            height: 120,
+            height: 80,
             width: 180,
             decoration: const BoxDecoration(
               color: Colors.white,
@@ -107,19 +113,6 @@ class TabBarCatalogue extends StatelessWidget {
                   Text(
                     title,
                     style: kSlimCatalogueTextStyle,
-                  ),
-                  Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 20,
-                        backgroundImage: NetworkImage(avatar),
-                      ),
-                      const Gap(10),
-                      Text(
-                        accountName,
-                        style: const TextStyle(color: kOrangeColor),
-                      ),
-                    ],
                   ),
                 ],
               ),
