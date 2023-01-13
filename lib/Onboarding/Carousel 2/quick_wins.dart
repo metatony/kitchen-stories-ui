@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_stories/Carousel%202/catalogue_2.dart';
-import 'package:kitchen_stories/Carousel%202/catalogue_2_list.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%202/catalogue_2.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%202/catalogue_2_list.dart';
 
 class QuickWins extends StatelessWidget {
   const QuickWins({super.key});

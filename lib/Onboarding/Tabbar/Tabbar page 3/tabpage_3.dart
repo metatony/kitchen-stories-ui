@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:kitchen_stories/Carousel%201/catalogue_1.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%201/catalogue_1.dart';
 
 import 'tabBar3_catalogue.dart';
 

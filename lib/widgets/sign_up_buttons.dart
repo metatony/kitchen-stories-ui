@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:kitchen_stories/Constatnts/constants.dart';
-import 'package:kitchen_stories/profile/email_sign.dart';
+import 'package:kitchen_stories/Onboarding/profile/email_sign.dart';
 
 class SignUpButtons extends StatelessWidget {
   const SignUpButtons({super.key});

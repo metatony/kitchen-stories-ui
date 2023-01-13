@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_stories/create%20page/create_page.dart';
-import 'package:kitchen_stories/profile/email_sign.dart';
+import 'package:kitchen_stories/Onboarding/create%20page/create_page.dart';
+import 'package:kitchen_stories/Onboarding/profile/email_sign.dart';
 import 'package:kitchen_stories/screens/home.dart';
-import 'package:kitchen_stories/profile/profile_account.dart';
-import 'package:kitchen_stories/Search%20page/search_page.dart';
-import 'package:kitchen_stories/Shopping%20page/shopping_page.dart';
-import 'package:kitchen_stories/profile/signup.dart';
+import 'package:kitchen_stories/Onboarding/profile/profile_account.dart';
+import 'package:kitchen_stories/Onboarding/Search%20page/search_page.dart';
+import 'package:kitchen_stories/Onboarding/Shopping%20page/shopping_page.dart';
+import 'package:kitchen_stories/Onboarding/profile/signup.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
 class BottomBar extends StatefulWidget {

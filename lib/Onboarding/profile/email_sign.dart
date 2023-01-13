@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:kitchen_stories/Constatnts/constants.dart';
-import 'package:kitchen_stories/profile/profile_account.dart';
+import 'package:kitchen_stories/Onboarding/profile/profile_account.dart';
 
 class EmailPage extends StatelessWidget {
   const EmailPage({super.key});

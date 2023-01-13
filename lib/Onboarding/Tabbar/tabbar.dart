@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_stories/Constatnts/constants.dart';
-import 'package:kitchen_stories/Tabbar/Tabbar%20page%201/tabpage_1.dart';
-import 'package:kitchen_stories/Tabbar/Tabbar%20page%202/tabpage_2.dart';
-import 'package:kitchen_stories/Tabbar/Tabbar%20page%203/tabpage_3.dart';
+import 'package:kitchen_stories/Onboarding/Tabbar/Tabbar%20page%201/tabpage_1.dart';
+import 'package:kitchen_stories/Onboarding/Tabbar/Tabbar%20page%202/tabpage_2.dart';
+import 'package:kitchen_stories/Onboarding/Tabbar/Tabbar%20page%203/tabpage_3.dart';
 
 class TabBarPage extends StatelessWidget {
   const TabBarPage({

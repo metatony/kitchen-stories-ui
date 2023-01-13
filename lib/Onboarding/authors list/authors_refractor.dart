@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_stories/authors%20list/authors_list.dart';
-import 'package:kitchen_stories/authors%20list/authors_widget.dart';
+import 'package:kitchen_stories/Onboarding/authors%20list/authors_list.dart';
+import 'package:kitchen_stories/Onboarding/authors%20list/authors_widget.dart';
 
 class AuthorsRefractor extends StatelessWidget {
   const AuthorsRefractor({super.key});

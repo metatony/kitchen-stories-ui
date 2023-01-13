@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_stories/Carousel%201/catalogue_1.dart';
-import 'package:kitchen_stories/Carousel%201/first_catalogue_list.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%201/catalogue_1.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%201/first_catalogue_list.dart';
 
 class RecipeCatalogue extends StatelessWidget {
   const RecipeCatalogue({super.key});

@@ -1,6 +1,6 @@
 
 
-import 'package:kitchen_stories/authors%20list/authors_widget.dart';
+import 'package:kitchen_stories/Onboarding/authors%20list/authors_widget.dart';
 
 List <AuthorsWidget> myList = [
   const AuthorsWidget(names: 'Jamie Oliver', images: 'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGVyc29ufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60'),

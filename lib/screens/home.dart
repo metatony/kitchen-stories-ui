@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:kitchen_stories/authors%20list/authors_widget.dart';
-import 'package:kitchen_stories/get_started/get_started.dart';
-import 'package:kitchen_stories/authors%20list/authors_refractor.dart';
-import 'package:kitchen_stories/Carousel%202/catalogue_2.dart';
-import 'package:kitchen_stories/Carousel%202/quick_wins.dart';
-import 'package:kitchen_stories/Carousel%201/catalogue_1.dart';
-import 'package:kitchen_stories/Carousel%201/recipe_catalogue.dart';
+import 'package:kitchen_stories/Onboarding/authors%20list/authors_widget.dart';
+import 'package:kitchen_stories/Onboarding/get_started/get_started.dart';
+import 'package:kitchen_stories/Onboarding/authors%20list/authors_refractor.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%202/catalogue_2.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%202/quick_wins.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%201/catalogue_1.dart';
+import 'package:kitchen_stories/Onboarding/Carousel%201/recipe_catalogue.dart';
 import 'package:kitchen_stories/widgets/cookbook.dart';
 
 class Home extends StatelessWidget {

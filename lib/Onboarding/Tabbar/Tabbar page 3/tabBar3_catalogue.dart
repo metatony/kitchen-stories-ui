@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:gap/gap.dart';
 
-import '../../Constatnts/constants.dart';
+import '../../../Constatnts/constants.dart';
 
 class TabBar3Catalogue extends StatelessWidget {
   const TabBar3Catalogue({
